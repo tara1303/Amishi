@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Graduation!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'TAN Twinkle', ibarra real nova;
+      background: linear-gradient(135deg, #fcefe8, #e8f0fc);
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 60px 20px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      color: #c45a8f;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .photo {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 25px 0;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .button {
+      background: #c45a8f;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+      border: none;
+    }
+
+    .button:hover {
+      background: #a03c75;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>HAPPPYYYY ADULTINGGG level 2!</h1>
+    <img src="./Amishi.jpeg" alt="Friend's photo" class="photo">
+    <p>Congratulations! You have worked so hard and grown so much. You have made us all so proud. I bet the little you and your dad are smiling ear to ear too. YOU ARE GOING TO ROCK this level 2 of adulting. I believe you and I am right here whenever you need me.</p>
+    <button id="cb" class="button">🎉 Celebrate!</button>
+    <footer>Made with smiles, Tarushi 💫</footer>
+  </div>
+
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const button = document.getElementById("cb");
+
+    button.addEventListener("click", () => {
+      // basic burst
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#c45a8f', '#fcefe8', '#e8f0fc', '#a03c75', '#ffddc1']
+      });
+
+      // optional second burst
+      setTimeout(() => {
+        confetti({
+          particleCount: 100,
+          spread: 100,
+          origin: { y: 0.6 },
+          colors: ['#c45a8f', '#fcefe8', '#e8f0fc', '#a03c75', '#ffddc1']
+        });
+      }, 200);
+    });
+  </script>
+</body>
+
+</html>
