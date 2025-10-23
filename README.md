@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Graduation!</title>
+  <title>Happy Adulting!</title>
  <style>
     body {
       font-family: 'Montserrat', sans-serif;
@@ -68,9 +68,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Happy Graduation, Sayoni!</h1>
+    <h1>Happy Adultinggg!</h1>
   <img src="" alt="Friend's photo" class="photo">
-    <p>Congratulation! You have worked so hard and grown so much. Here's to new adventures, new journeys and another step closer to your dreams.</p>
+    <p>Congratulation.</p>
     <a href="#" class="button">🎉 Celebrate!</a>
     <footer>Made with smiles, Tarushi 💫</footer>
   </div>
